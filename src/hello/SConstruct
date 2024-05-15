@@ -1,0 +1,1 @@
+Program("hello", "hello.cpp", LIBS=['systemc'], LIBPATH=['/opt/homebrew/lib'], CCFLAGS=['-I/opt/homebrew/include', '-std=c++17'])
