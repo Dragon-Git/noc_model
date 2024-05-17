@@ -19,6 +19,7 @@ jobs:
         sudo apt-get install -y libsystemc libsystemc-dev
     - name: Test
       run: |
-        g++ -o hello -c -std=c++11 -lsystemc src/hello/hello.cpp
+        g++ -o hello -std=c++11 -lsystemc src/hello/hello.cpp
+        chmod +x hello
         ./hello
 
